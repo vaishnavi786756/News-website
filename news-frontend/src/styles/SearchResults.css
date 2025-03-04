@@ -1,0 +1,35 @@
+/* SearchResults.css */
+
+.search-results-container {
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #555;
+    text-align: center;
+  }
+  
+  .results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .results-grid {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+  
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
+  
